@@ -27,3 +27,78 @@ Clone este repositório para sua máquina local:
 
 ```bash
 git clone https://github.com/SEU_USUARIO/tisscherlock.git
+
+
+2. Instalar as dependências
+
+Certifique-se de ter o Java 21 e o Maven instalados no seu sistema.
+
+Execute o comando abaixo para instalar as dependências do projeto:
+
+mvn clean install
+
+
+3. Executar o projeto
+
+Após a instalação das dependências, você pode executar o projeto localmente com o comando:
+
+mvn spring-boot:run
+
+O back-end será executado em http://localhost:8080 por padrão.
+
+4. Front-end
+
+Se você estiver desenvolvendo o front-end, pode rodá-lo na porta 4200 (ou a porta configurada em seu projeto). A comunicação entre o front-end e o back-end será feita via API REST.
+Como Usar
+
+    Faça uma requisição POST para o endpoint /api/validar-xml com um arquivo XML.
+    A resposta será um ValidationResult com a validação do XML, incluindo quaisquer erros encontrados nas tags e valores financeiros.
+    Caso o XML seja válido, você receberá uma resposta com um status 200 OK. Se houver erros, um 400 Bad Request será retornado com os detalhes dos erros.
+
+Exemplos de Uso
+Requisição
+
+Endpoint: POST /api/validar-xml
+
+curl -X POST -F "file=@seuarquivo.xml" http://localhost:8080/api/validar-xml
+
+Resposta de Sucesso
+
+{
+  "valid": true,
+  "erros": [],
+  "sucessoMessage": "O XML foi validado com sucesso.",
+  "statusCode": 200,
+  "resultadosFinanceiros": {
+    "totalLiberado": "R$ 1400.00",
+    "totalGlosa": "R$ 200.00",
+    "discrepancia": "R$ 10.00"
+  }
+}
+
+Resposta de Erro
+
+{
+  "valid": false,
+  "erros": [
+    "❌ A tag <ans:prestador> está ausente.",
+    "❌ O valor de <ans:valorLiberado> está incorreto."
+  ],
+  "sucessoMessage": null,
+  "statusCode": 400,
+  "resultadosFinanceiros": null
+}
+
+Contribuindo
+
+Contribuições são bem-vindas! Para contribuir com este projeto, siga os seguintes passos:
+
+    Fork este repositório.
+    Crie uma nova branch para sua feature (git checkout -b feature/nova-feature).
+    Faça as alterações necessárias e commit suas mudanças (git commit -am 'Adiciona nova feature').
+    Envie para o repositório remoto (git push origin feature/nova-feature).
+    Abra um pull request.
+
+Licença
+
+Distribuído sob a licença MIT. Veja o arquivo LICENSE para mais informações.
