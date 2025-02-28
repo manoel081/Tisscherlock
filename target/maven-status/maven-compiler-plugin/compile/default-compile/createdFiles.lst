@@ -1,0 +1,10 @@
+com/mv/tisscherlock/config/CorsConfig.class
+com/mv/tisscherlock/utils/XMLUtils$CarteiraHandler.class
+com/mv/tisscherlock/model/ValidationResult.class
+com/mv/tisscherlock/service/XMLAnalyzerService.class
+com/mv/tisscherlock/utils/XSDDownloader.class
+com/mv/tisscherlock/controller/XMLAnalyzerController.class
+com/mv/tisscherlock/model/FinancialResults.class
+com/mv/tisscherlock/utils/XMLUtils.class
+com/mv/tisscherlock/utils/XMLValidator.class
+com/mv/tisscherlock/TisscherlockApplication.class

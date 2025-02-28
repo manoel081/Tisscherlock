@@ -1,0 +1,9 @@
+/home/manoel/Downloads/tisscherlock/src/main/java/com/mv/tisscherlock/TisscherlockApplication.java
+/home/manoel/Downloads/tisscherlock/src/main/java/com/mv/tisscherlock/config/CorsConfig.java
+/home/manoel/Downloads/tisscherlock/src/main/java/com/mv/tisscherlock/controller/XMLAnalyzerController.java
+/home/manoel/Downloads/tisscherlock/src/main/java/com/mv/tisscherlock/model/FinancialResults.java
+/home/manoel/Downloads/tisscherlock/src/main/java/com/mv/tisscherlock/model/ValidationResult.java
+/home/manoel/Downloads/tisscherlock/src/main/java/com/mv/tisscherlock/service/XMLAnalyzerService.java
+/home/manoel/Downloads/tisscherlock/src/main/java/com/mv/tisscherlock/utils/XMLUtils.java
+/home/manoel/Downloads/tisscherlock/src/main/java/com/mv/tisscherlock/utils/XMLValidator.java
+/home/manoel/Downloads/tisscherlock/src/main/java/com/mv/tisscherlock/utils/XSDDownloader.java

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Validação XML - TISS</title>
+    <!-- Evitar erro 404 de favicon.ico -->
+    <link rel="icon" href="data:,"> 
+    <link rel="stylesheet" href="../static/css/style.css">  <!-- Atualizado o caminho para "/css/style.css" -->
+</head>
+
+<body>
+    <header>
+        <h1>Sistema de Validação de Arquivos TISS</h1>
+    </header>
+
+    <main>
+        <section id="upload">
+            <h2>Carregar Arquivo XML</h2>
+            <label for="fileInput">Escolher Arquivo</label>
+            <input type="file" id="fileInput" accept=".xml" />
+            <br>
+            <button id="btnUpload">Validar Arquivo</button>
+        </section>
+
+        <section id="validationResults">
+            <h2>Relatório de Validação</h2>
+            <div id="errorLog">Nenhum erro encontrado.</div>
+        </section>
+
+        <section id="financialResults">
+            <h2>Resultados Financeiros</h2>
+            <div id="financialLog">Nenhum dado financeiro disponível.</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Sistema TISS. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="../static/js/app.js"></script> <!-- Atualizado o caminho para "/js/app.js" -->
+</body>
+
+</html>

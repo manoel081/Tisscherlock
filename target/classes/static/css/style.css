@@ -1,0 +1,180 @@
+/* Importando fonte mais moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    font-size: 1rem;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #0056b3;
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Container principal */
+main {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h2 {
+    margin-bottom: 1rem;
+    color: #0056b3;
+    font-weight: 600;
+    font-size: 1.4rem;
+}
+
+/* Área de upload com efeito */
+#upload {
+    text-align: center;
+    border: 2px dashed #0056b3;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f8f9fc;
+    transition: 0.3s;
+}
+
+#upload:hover {
+    background: #e3eaf3;
+}
+
+/* Estilizando o input file */
+input[type="file"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    background-color: #0056b3;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-bottom: 10px;
+}
+
+label:hover {
+    background-color: #003f8a;
+}
+
+/* Botão de upload */
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Áreas de resultados */
+#validationResults, #financialResults {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Caixas de resultado */
+#errorLog, #financialLog {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #f8f9fc;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #0056b3;
+    color: white;
+    font-size: 0.9rem;
+    border-radius: 10px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    main {
+        padding: 1.5rem;
+        margin: 20px;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    label, button {
+        font-size: 0.9rem;
+        padding: 10px 15px;
+    }
+
+    #upload {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    header {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    #upload {
+        padding: 10px;
+    }
+
+    label, button {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}
